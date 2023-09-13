@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  html{
+    height:100%;
+  }
+  
+  body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr 1fr;
+  }
+  
+  .header{
+    grid-column: 1 / 3;
+    height:6rem;
+    background-color: #81a4cd;
+    
+  }
+  
+  .headcontainer{
+    display:flex;
+    height:100%;
+    align-items:center;
+    padding:2rem;
+    color:white;
+  }
+  
+  #myform{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    flex-direction:column;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius:16px;
+    width: 16rem;
+    min-width:200px;
+    background-color:#f0eef1;
+    
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+  
+  input[type='submit']{
+    background-color:#007bff;
+    width:100%;
+    border-radius:7px;
+    border:none;
+    color:white;
+    font-size:0.9rem;
+  }
+  
+  input{
+    height:2.5rem;
+    border-radius:7px;
+    border: 2px solid white;
+    outline: none;
+  }
+  
+  input[type='text'], input[type='number']{
+    width:100%;
+    
+  }
+  
+  .checkbox-label {
+    display: flex;
+    justify-content: center;
+    width:130px;
+    margin-right:10px;
+    align-items: center;
+    
+  }
+  
+  .checkbox-label input[type="checkbox"] {
+    margin-right: 8px;
+    padding:1rem;
+  }
+  
+  
+  .checkbox-label {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .footer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    grid-column: 1/ 3;
+    font-size: 1.1rem;
+  }
+  
+  .my-book{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    padding:1rem;
+    border:2px solid #d4d3d5;
+    border-radius:13px;
+    text-align: center;
+    
+  }
+  
+  .book-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows:200px;
+    gap:1rem;
+    overflow:auto;
+  }
+
+  .readBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a8f98f;
+    border-radius: 16px;
+    outline: none;
+    width: 4.5rem;
+    height: 1.5rem;
+    border: solid #a8f98f 2px;
+  }
+
+  .readBtn-notRead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 16px;
+    outline: none;
+    width: 4.5rem;
+    height: 1.5rem;
+    border: solid red;
+  }
+
+  .deleteBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4d3d5;
+    color: rgb(0, 0, 0);
+    border-radius: 16px;
+    outline: none;
+    width: 4.5rem;
+    height: 1.5rem;
+    border: solid #fdfbfe ;
+  }
+
+  .btnContainer {
+    display: flex;
+    width: 18rem;
+    justify-content: space-between;
+  }
+
+  .deleteBtn:hover{
+    background-color: #81a4cd;
+  }
+
+  .readBtn-notRead:hover {
+    background-color: rgb(193, 58, 58);
+    color: white;
+    border: solid rgb(193, 58, 58);
+}
+
+.readBtn:hover{
+    background-color: rgb(179, 212, 114);
+    color: black;
+    border: solid rgb(179, 212, 114);
+}
