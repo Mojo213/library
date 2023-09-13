@@ -106,7 +106,7 @@ function displayBooks(libraryArr) {
         btnContainer.appendChild(deleteBtn);
 
         deleteBtn.addEventListener('click', (event) => {
-            let userConfirm = prompt('Your are about to delete this book from your library, do you wish to proceed?', 'Yes');
+            let userConfirm = prompt('Your are about to delete this book from your library, do you wish to proceed?', 'No');
             if (userConfirm === 'Yes') {
                 const bookIndex = myLibrary.findIndex(bookInLibrary => bookInLibrary.title === book.title && bookInLibrary.author === book.author);
                 if (bookIndex !== -1) {
