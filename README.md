@@ -1,6 +1,7 @@
 # My Library
 
 My Library is a simple web application that allows you to manage and keep track of your book collection. With this application, you can add books to your library, mark them as read or not read, and even delete books when you no longer need them. It's a convenient way to organize your reading list. [Live Demo](https://mojo213.github.io/library/)
+<img width="1512" alt="Screenshot 2023-10-05 at 19 37 18" src="https://github.com/Mojo213/library/assets/104395212/a415e064-c3a1-4246-9395-880a296356c2">
 
 ## Table of Contents
 
